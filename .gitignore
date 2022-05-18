@@ -1,7 +1,7 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,c++,executable
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,c++,executable
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,c++
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,c++
 
 ### C++ ###
 # Prerequisites
@@ -36,16 +36,6 @@
 *.exe
 *.out
 *.app
-
-### Executable ###
-*.bat
-*.cgi
-*.com
-*.gadget
-*.jar
-*.pif
-*.vb
-*.wsf
 
 ### Linux ###
 *~
@@ -87,7 +77,40 @@
 # Ignore code-workspaces
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,c++,executable
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,c++
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+
+
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+### Above combination will ignore all files without extension ###
+
+# Ignore files with extension `.class` & `.sm`
+*.class
+*.sm
+
+# Ignore `bin` dir
+bin/
+# or
+*/bin/*
+
+# Unignore all `.jar` in `bin` dir
+!*/bin/*.jar
+
+# Ignore all `library.jar` in `bin` dir
+*/bin/library.jar
+
+# Ignore a file with extension
+relative/path/to/dir/filename.extension
+
+# Ignore a file without extension
+relative/path/to/dir/anotherfile
