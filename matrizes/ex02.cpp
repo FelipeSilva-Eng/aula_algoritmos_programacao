@@ -8,17 +8,29 @@ using namespace std;
 
 #include <locale.h>
 
-const TAM = 5
 
 int main(){
     setlocale(LC_ALL, "Portuguese");
 
-    int minha_matriz[TAM][TAM], linha, coluna;
+    int minha_matriz[5][5], linha, coluna;
 
-    for (linha=0; linha<TAM; linha++){
-        for (coluna=0; coluna<TAM; coluna++){
-            //precisa finalizar, não entendi o enunciado
+    for (linha=0; linha<5; linha++){
+        for (coluna=0; coluna<5; coluna++){
+            if (linha == coluna) {
+                //cout << "[" << linha << "]" << "[" << coluna << "]";
+                minha_matriz[linha][coluna] = 1;
+            } else {
+                minha_matriz[linha][coluna] = 0;
+            }
         }
+    }
+
+    // imprime a matriz na tela
+    for (linha=0; linha<5; linha++){
+        for (coluna=0; coluna<5; coluna++){
+            cout << minha_matriz[linha][coluna] << "\t";
+        }
+        cout << endl;
     }
 
 

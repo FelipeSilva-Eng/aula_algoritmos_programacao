@@ -1,3 +1,7 @@
+///
+// Faça um programa que preencha uma matriz de 5X5 com o elemento um em todas as posições em que o índice de linha tem valor igual ao da coluna.
+///
+
 #include <iostream>
 using namespace std;
 
@@ -14,7 +18,7 @@ int main(){
     for (linha=0; linha<3; linha++){
 
         for (coluna=0; coluna<3; coluna++) {
-            cout << "Digite um número para a posição " << "coluna " << coluna+1 << " x " << "linha " << linha+1 << endl;
+            cout << "Digite um número para [" << coluna << "]" << "[" << linha  << "]" << endl;
             cin >> matriz[linha][coluna];
 
             //cria uma cópia da matriz para fazer as alterações somente na cópia
