@@ -9,10 +9,16 @@ int main(){
 
     int vet_a[5], vet_b[5], vet_c[5], i;
 
+    cout << "Preencha o vetor A...\n" << endl;
+
+
     for (i=0; i<5; i++) {
         cout << "Informe o numero da posição " << i+1 << endl;
         cin >> vet_a[i];
     }
+
+    cout << "Agora preencha o vetor b...\n" << endl;
+
     for (i=0; i<5; i++) {
         cout << "Informe o numero da posição " << i+1 << endl;
         cin >> vet_b[i];
@@ -20,6 +26,7 @@ int main(){
 
     for (i=0; i<5; i++) {
         vet_c[i] = vet_a[i] - vet_b[i];
+        cout << vet_c[i] << "|";
     }
 
     cout << vet_c[0] << endl;
